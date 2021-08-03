@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainDiv{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 10px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.imgDiv{
+    height: 240px;
+    width: 240px;
+    line-height: 240px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(185, 165, 135, 0.384);
+    overflow: hidden;
+}
+.imgDiv>img{
+    max-height: 240px;
+    max-width: 240px;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+.modalMain{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+.modalDiv{
+    width: fit-content;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.modalDiv>img{
+    max-width: 70vw;
+    max-height: 70vh;
+}
+.modalDiv>button{
+    width: 26px;
+    height: 26px;
+    border: none;
+    background: none;
+    color: rgb(255, 246, 246);
+    text-shadow: 1px 1px 1px rgb(126, 123, 123);
+    font-size: 26px;
+    position: absolute;
+}
+.left, .right{
+    top: calc(55% - 26px);
+}
+.close{
+    top: 10px;
+    right: 10px;    
+}
+.left{
+    left: -35px;  
+}
+.right{
+    right: -35px;  
+}
